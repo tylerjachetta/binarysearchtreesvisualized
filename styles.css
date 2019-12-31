@@ -1,0 +1,62 @@
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.link {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+svg {
+	border: 1px solid black;
+  background: whitesmoke;
+}
+
+svg:hover {
+  cursor: grab; 
+}
+
+svg:active {
+  cursor: grabbing; 
+}
+
+.panel {
+    background: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.container-fluid {
+  margin-bottom: 10px;
+}
+
+.container {
+  margin-left: 0px;
+}
+
+.info {
+  color: white;
+  padding-left: 5px;
+}
+
+.form-control {
+  width: 45%;
+}
+
+#hover {
+  fill: blue;
+}

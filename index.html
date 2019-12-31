@@ -1,0 +1,131 @@
+<html lang="en" class="h-100"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Binary Trees Visualized</title>
+
+
+    <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="styles.css" rel="stylesheet" >
+    <!-- Favicons -->
+  <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      html,body {
+        height: 100%;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      main {
+        padding: 100px 15px 0;
+      }
+
+      .col-sm {
+        height: 800px;
+      }
+
+      @media (max-height: 992px) {
+        .col-sm {
+          height: 550px;
+        }
+      }
+
+      @media (max-height: 500px) {
+        .col-sm {
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 608px) {
+        main {
+            padding: 130px 15px 0;
+          }
+
+        .col-sm {
+          height: 400px;
+        }
+      }
+
+      .footer {
+        background-color: #f5f5f5;
+      }
+
+      .footer > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow">
+        <a class="navbar-brand" href="#">Binary Trees Visualized</a>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <form class="form-inline mt-3">
+              <input class="form-control" id="value" type="text" placeholder="Insert a number" aria-label="Search">
+              <button class="btn btn-success btn-small ml-1" type="button" onclick="InsertNode();">Insert</button>
+              <button class="btn btn-danger btn-small ml-1" type="button" onclick="DeleteNode();">Delete</button>
+            </form>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <div class="panel BST">
+              <div class ="info">
+                <p class="d-inline">BST</p>
+                <p class="d-inline"> - Height: <span></span></p>
+              </div>
+              <div class="graph"></div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="panel AVL">
+              <div class ="info">
+                  <p class="d-inline">AVL</p>
+                  <p class="d-inline"> - Height: <span></span></p>
+              </div>
+              <div class="graph"></div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="panel Splay">
+              <div class ="info">
+                <p class="d-inline">Splay</p>
+                <p class="d-inline"> - Height: <span></span></p>
+              </div>
+              <div class="graph"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark shadow">
+      <div class="container">
+        <span class="text-white">Developed by Tyler Jachetta</span>
+      </div>
+    </footer>
+    <script src="d3.min.js"></script>
+    <script src="graph.js"></script>
+    <script src="tree.js"></script>
+  </body>
+
+</html>
